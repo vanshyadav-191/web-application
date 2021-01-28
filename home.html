@@ -1,0 +1,35 @@
+<html>
+<body style="margin:0;  background-image: url(bg.png); background-size: cover;" ">
+<%
+	response.setHeader("cache-control","no-cache,no-store,must-revalidate");
+	String email=(String)session.getAttribute("email");
+	if(email==null)
+		response.sendRedirect("index.jsp");
+%>
+<div style="background:grey;text-align:center;height:15%;font-size:300%;padding-top:2%;color:rgb(255, 255, 255)">
+	Welcome To <span style="color:rgb(111, 255, 55) ;">JurassicWorld.com</span> 
+<div style="font-size:50%;color:white;text-align:right"><%=email%></div>
+</div>
+<div style="text-align:center; height:6%">
+	<a href="home.HTML" style="background:rgb(111, 255, 55);padding:1.5%;text-decoration:none;margin:0 2%"><b>Home</b></a>
+	<a href="" style="background:rgb(111, 255, 55);padding:1.5%;text-decoration:none;margin:0 2%"><b>add post</b></a>
+	<a href="profile.jsp" style="background:rgb(111, 255, 55);padding:1.5%;text-decoration:none;margin:0 2%"><b>profile</b></a>
+	<a href="update.jsp" style="background:rgb(111, 255, 55);padding:1.5%;text-decoration:none;margin:0 2%"><b>update </b></a>
+	<a href="logout.jsp" style="background:rgb(111, 255, 55);padding:1.5%;text-decoration:none;margin:0 2%"><b>Logout</b></a>
+</div>
+<div style="text-align:center;background:rgb(111, 255, 55);width:20%;padding:15px;margin:5% 5% 0 5%;display:inline-box;">
+	<h3>Dinosauras Panel</h3>
+	<b><a href="" style="text-decoration:none">View Dinosaur Profile</a></b><Br><Br>
+	<b><a href="" style="text-decoration:none">Add Dinosaur Profile</a></b><Br><Br>
+	<b><a href="" style="text-decoration:none">Update Dinosaur Profile</a></b><Br><Br>
+	<b><a href="" style="text-decoration:none">Delete Dinosaur</a></b><Br><Br>
+	<b><a href="" style="text-decoration:none">Search Dinosaur</a></b><Br><Br>
+	<b><a href="" style="text-decoration:none">Upload Dinosaur Photo</a></b><Br><Br>
+</div>
+
+<div style="background:grey;text-align:center;height:11%;font-size:15px;padding-top:3%;color:white;margin-top:30%">
+	All Rights Reserved.(www.jurassicWorld.com)  2018-19
+</div>
+
+</body>
+</html>											
